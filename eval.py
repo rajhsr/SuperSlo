@@ -81,7 +81,7 @@ def interpolate_batch(frames, factor):
         ft_p = (co_eff[0] * vt0 * gi0ft0f + co_eff[1] * vt1 * gi1ft1f) / \
                (co_eff[0] * vt0 + co_eff[1] * vt1)
 
-        frame_buffer.append(ft_p)
+        frame_buffer.append(ft0f) # get flow directly
 
     return frame_buffer
 
